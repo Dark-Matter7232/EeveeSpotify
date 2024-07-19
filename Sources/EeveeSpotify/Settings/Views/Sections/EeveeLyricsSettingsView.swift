@@ -4,7 +4,7 @@ struct EeveeLyricsSettingsView: View {
     
     @State var musixmatchToken = UserDefaults.musixmatchToken
     @State var lyricsSource = UserDefaults.lyricsSource
-    @State var geniusFallback = UserDefaults.geniusFallback
+    @State var lrclibFallback = UserDefaults.lrclibFallback
     @State var lyricsOptions = UserDefaults.lyricsOptions
     @State var instrumentalgap = UserDefaults.instrumentalgap
 
@@ -31,16 +31,16 @@ struct EeveeLyricsSettingsView: View {
                 }
             }
 
-            if lyricsSource != .genius {
+            if lyricsSource != .lrclib {
                 Section(
-                    footer: Text("genius_fallback_description".localizeWithFormat(lyricsSource.description))
+                    footer: Text("lrclib_fallback_description".localizeWithFormat(lyricsSource.description))
                 ) {
                     Toggle(
-                        "genius_fallback".localized,
-                        isOn: $geniusFallback
+                        "lrclib_fallback".localized,
+                        isOn: $lrclibFallback
                     )
                     
-                    if geniusFallback {
+                    if lrclibFallback {
                         Toggle(
                             "show_fallback_reasons".localized,
                             isOn: Binding<Bool>(
@@ -94,14 +94,14 @@ struct EeveeLyricsSettingsView: View {
         
         .animation(.default, value: lyricsSource)
         .animation(.default, value: showLanguageWarning)
-        .animation(.default, value: geniusFallback)
+        .animation(.default, value: lrclibFallback)
         
         .onChange(of: instrumentalgap) { newGap in
             UserDefaults.instrumentalgap = newGap
         }
         
-        .onChange(of: geniusFallback) { geniusFallback in
-            UserDefaults.geniusFallback = geniusFallback
+        .onChange(of: lrclibFallback) { lrclibFallback in
+            UserDefaults.lrclibFallback = lrclibFallback
         }
         
         .onChange(of: lyricsOptions) { lyricsOptions in

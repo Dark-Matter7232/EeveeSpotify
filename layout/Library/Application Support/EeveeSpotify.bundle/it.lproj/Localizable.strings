@@ -47,8 +47,8 @@ user_token_placeholder = "Inserisci Token Utente o Incolla Informazioni di Debug
 enter_user_token = "Inserisci il Token Utente";
 enter_user_token_message = "Per utilizzare Musixmatch, devi recuperare il tuo token utente dall'app ufficiale. Scarica Musixmatch dall'App Store, registrati, poi vai su Impostazioni > Assistenza > Copia info debug e incollale qui. Puoi anche estrarre il token usando MITM.";
 
-genius_fallback = "Fallback Genius";
-genius_fallback_description = "Carica i testi da Genius se c'è un problema con %@.";
+lrclib_fallback = "Fallback Genius";
+lrclib_fallback_description = "Carica i testi da Genius se c'è un problema con %@.";
 
 show_fallback_reasons = "Mostra Motivi di Fallback";
 

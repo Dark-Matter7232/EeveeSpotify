@@ -47,8 +47,8 @@ user_token_placeholder = "Enter User Token or Paste Debug Info";
 enter_user_token = "Enter User Token";
 enter_user_token_message = "In order to use Musixmatch, you need to retrieve your user token from the official app. Download Musixmatch from the App Store, sign up, then go to Settings > Get help > Copy debug info, and paste it here. You can also extract the token using MITM.";
 
-genius_fallback = "Genius Fallback";
-genius_fallback_description = "Load lyrics from Genius if there is a problem with %@.";
+lrclib_fallback = "LRCLIB Fallback";
+lrclib_fallback_description = "Load lyrics from LRCLIB if there is a problem with %@.";
 
 show_fallback_reasons = "Show Fallback Reasons";
 

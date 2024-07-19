@@ -212,14 +212,14 @@ private func loadLyricsForCurrentTrack() throws {
             lastLyricsState.fallbackError = .UnknownError
         }
         
-        if source == .genius || !UserDefaults.geniusFallback {
+        if source == .lrclib || !UserDefaults.lrclibFallback {
             throw error
         }
         
-        NSLog("[EeveeSpotify] Unable to load lyrics from \(source): \(error), trying Genius as fallback")
+        NSLog("[EeveeSpotify] Unable to load lyrics from \(source): \(error), trying lrclib as fallback")
         
-        source = .genius
-        repository = GeniusLyricsRepository()
+        source = .lrclib
+        repository = LrcLibLyricsRepository()
         
         lyricsDto = try repository.getLyrics(searchQuery, options: options)
     }

@@ -39,8 +39,8 @@ user_token_placeholder = "输入用户令牌或粘贴调试信息";
 enter_user_token = "输入用户令牌";
 enter_user_token_message = "为了使用 Musixmatch，需要从官方应用程序中检索你的用户令牌。从 AppStore 下载 Musixmatch，注册后转到“设置”>“获取帮助”>“复制调试信息”，并将其粘贴在此处。你也可以使用 MITM 提取令牌。";
 
-genius_fallback = "回退Genius";
-genius_fallback_description = "如果 %@ 有问题，将使用 Genius 加载歌词。";
+lrclib_fallback = "回退Genius";
+lrclib_fallback_description = "如果 %@ 有问题，将使用 Genius 加载歌词。";
 
 show_fallback_reasons = "显示回退原因";
 

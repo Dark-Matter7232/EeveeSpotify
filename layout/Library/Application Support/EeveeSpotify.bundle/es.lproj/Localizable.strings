@@ -47,8 +47,8 @@ user_token_placeholder = "Introducir Token de Usuario o Pegar Información de De
 enter_user_token = "Introduce el Token de Usuario";
 enter_user_token_message = "Para usar Musixmatch, necesitas recuperar tu token de usuario de la app oficial. Descarga Musixmatch de la App Store, regístrate y ve a Configuración > Obtener ayuda > Copiar información de depuración y pégala aquí. También puedes extraer el token usando MITM.";
 
-genius_fallback = "Genius como alternativa";
-genius_fallback_description = "Cargar letras desde Genius si hay un problema con %@.";
+lrclib_fallback = "LRCLIB como alternativa";
+lrclib_fallback_description = "Cargar letras desde LRCLIB si hay un problema con %@.";
 
 show_fallback_reasons = "Mostrar problemas encontrados";
 

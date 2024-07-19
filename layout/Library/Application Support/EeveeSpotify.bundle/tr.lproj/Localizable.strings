@@ -47,8 +47,8 @@ user_token_placeholder = "Kullanıcı Tokeni Girin veya Hata Ayıklama Bilgileri
 enter_user_token = "Kullanıcı Tokeni Girin";
 enter_user_token_message = "Musixmatch'i kullanmak için, kullanıcı tokeninizi resmi uygulamadan almanız gerekir. App Store'dan Musixmatch'i indirin, kaydolun, ardından Ayarlar > Yardım Al > Hata Ayıklama Bilgilerini Kopyala seçeneğine gidin ve buraya yapıştırın. Tokeni ayrıca MITM kullanarak da çıkarabilirsiniz.";
 
-genius_fallback = "Genius'a Geri çekilme";
-genius_fallback_description = "Bir sorun olduğunda %@ üzerinden şarkı sözlerini Genius'tan yükleyin.";
+lrclib_fallback = "Genius'a Geri çekilme";
+lrclib_fallback_description = "Bir sorun olduğunda %@ üzerinden şarkı sözlerini Genius'tan yükleyin.";
 
 show_fallback_reasons = "Geri çekilme Nedenlerini Göster";
 

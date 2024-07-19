@@ -46,8 +46,8 @@ user_token_placeholder = "Введите токен или вставьте от
 
 enter_user_token = "Введите токен";
 enter_user_token_message = "Чтобы использовать Musixmatch, требуется получить токен из официального приложения. Загрузите Musixmatch в App Store, зарегистрируйтесь, перейдите в Настройки > Получить помощь > Скопировать отладочную информацию, и вставьте ее здесь. Вы также можете получить токен используя MITM.";
-genius_fallback = "Переключаться на Genius";
-genius_fallback_description = "Загружать тексты из Genius при возникновении проблемы с %@.";
+lrclib_fallback = "Переключаться на Genius";
+lrclib_fallback_description = "Загружать тексты из Genius при возникновении проблемы с %@.";
 
 show_fallback_reasons = "Показывать проблемы";
 

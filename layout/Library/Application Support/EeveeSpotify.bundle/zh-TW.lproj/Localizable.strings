@@ -47,8 +47,8 @@ user_token_placeholder = "請在此輸入 Musixmatch 使用者令牌或粘貼除
 enter_user_token = "輸入使用者令牌";
 enter_user_token_message = "若要使用 Musixmatch作為歌詞提供者，則需要從官方應用程式中找到你的使用者令牌. 從App Store下載Musixmatch，註冊或登錄, 接著來到 設定（右上角的齒輪圖標） > Get help > 複製除錯訊息, 並在此處貼上. 亦可使用MITM提取使用者令牌.";
 
-genius_fallback = "Genius回退";
-genius_fallback_description = "如果無法從 %@ 加載歌詞，將使用 Genius 加載歌詞。";
+lrclib_fallback = "Genius回退";
+lrclib_fallback_description = "如果無法從 %@ 加載歌詞，將使用 Genius 加載歌詞。";
 
 show_fallback_reasons = "顯示回退原因";
 
