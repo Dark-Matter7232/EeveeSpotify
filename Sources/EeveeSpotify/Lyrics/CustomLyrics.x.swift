@@ -193,17 +193,8 @@ private func loadLyricsForCurrentTrack() throws {
                 }
             
             case .MusixmatchRestricted:
-                
-                if !hasShownRestrictedPopUp {
-                    PopUpHelper.showPopUp(
-                        delayed: false,
-                        message: "musixmatch_restricted_popup".localized,
-                        buttonText: "OK"
-                    )
-                    
-                    hasShownRestrictedPopUp.toggle()
-                }
-                
+                // No-op: Do nothing when this error occurs
+                break
             default:
                 break
             }
