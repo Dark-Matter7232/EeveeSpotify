@@ -6,12 +6,30 @@ struct EeveeLyricsSettingsView: View {
     @State var lyricsSource = UserDefaults.lyricsSource
     @State var geniusFallback = UserDefaults.geniusFallback
     @State var lyricsOptions = UserDefaults.lyricsOptions
+    @State var instrumentalgap = UserDefaults.instrumentalgap
 
     @State var showLanguageWarning = false
     
     var body: some View {
         List {
             LyricsSourceSection()
+            
+            if lyricsSource == .beautiful {
+                Section(
+                    footer: Text("Amount of time between lyrics before it's marked as instrumental.")
+                ) {
+                    VStack(alignment: .leading, spacing: 5) {
+                        
+                        Text("Instrumental Gap \(instrumentalgap, specifier: "%.1f") seconds")
+                        
+                        Slider(
+                            value: $instrumentalgap,
+                            in: 5...15,
+                            step: 0.5
+                        )
+                    }
+                }
+            }
 
             if lyricsSource != .genius {
                 Section(
@@ -72,12 +90,15 @@ struct EeveeLyricsSettingsView: View {
                     .modifier(ListRowSeparatorHidden())
             }
         }
-        
         .listStyle(GroupedListStyle())
         
         .animation(.default, value: lyricsSource)
         .animation(.default, value: showLanguageWarning)
         .animation(.default, value: geniusFallback)
+        
+        .onChange(of: instrumentalgap) { newGap in
+            UserDefaults.instrumentalgap = newGap
+        }
         
         .onChange(of: geniusFallback) { geniusFallback in
             UserDefaults.geniusFallback = geniusFallback
