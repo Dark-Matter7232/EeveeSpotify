@@ -3,10 +3,7 @@ import SwiftUI
 extension EeveeLyricsSettingsView {
     
     func lyricsSourceFooter() -> some View {
-        var text = "lyrics_source_description".localized
-        var text = """
-BeautifulLyrics: The API used by the Beautiful Lyrics Spicetify extension. Gets lyrics from multiple sources, Provides only time-synced lyrics for many songs.
-"""
+        var text = "lyrics_source_description".localized + "BeautifulLyrics: The API used by the Beautiful Lyrics Spicetify extension. Gets lyrics from multiple sources, Provides only time-synced lyrics for many songs."
         if Locale.isInRegion("JP", orHasLanguage: "ja") {
             text.append("\n\n")
             text.append("petitlyrics_description".localized)
